@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulaire</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="form.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    </head>
+    <body>
+        <div class="formulaire">
+            <form method="POST" action="../controllers/insertion_formulaire.php">
+                <div class="fonctions">
+                    <div class="fonction">
+                        <div class="sup_fonction">
+                            Supprimer une fonction
+                        </div>
+                        <h1>
+                            Fonction 1
+                        </h1>
+                        <p>
+                            Nom de la fonction : 
+                            <input type="text" class="fonction_nom" name="fonction_sarah_1" value="¯\_(ツ)_/¯"/>
+                        </p>
+                        <p>
+                            Que doit dire SARAH ? 
+                            <input type="text" class="question_sarah" name="question_sarah_1"/>
+                        </p>
+                        <br/>
+                        <div class="regex">
+                            <div class="regex_unitaire">
+                                <p class="regex_name">
+                                    Expression régulière 1 : 
+                                    <input type="text" class="" name="question_sarah_1_1" value ="¯\_(ツ)_/¯"/>
+                                </p>
+                                <br/>
+                                <label for="cbox1">
+                                    <input type="checkbox" id="cbox1" value="premiere_checkbox" />
+                                    Envois vers une réponse 
+                                </label>
+                                <br>
+                                <label for="cbox2">
+                                    <input type="checkbox" id="cbox2" value="deuxieme_checkbox"/> 
+                                    Redirige vers une autre fonction
+                                </label>
+                                </br>
+                                <label for="cbox3">
+                                    <input type="checkbox" id="cbox3" value="troisieme_checkbox"/> 
+                                    Lance un exécutable 
+                                </label>
+                                </br>
+                                <div class="sup_regex">
+                                    Supprimer un champ regex
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add_regex">
+                            Ajouter un champ regex
+                        </div>
+                    </div>
+
+
+                </div>
+                <a class="add_fonction">
+                    Ajouter une fonction
+                </a>
+                </br>
+                <input class='submit' TYPE="submit" NAME="nom" VALUE=" Envoyer ">
+            </form>
+        </div>
+
+        <script src="../js/formulaire.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,8 @@
+## YAML Template.
+---
+
+"dsn":
+    db_name: sarah_v3
+    hote: localhost
+"user": root
+"mdp": 
